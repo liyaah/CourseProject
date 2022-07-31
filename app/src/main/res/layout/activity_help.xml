@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpActivity">
+
+    <TextView
+        android:id="@+id/HelpTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Help"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/backButton3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:onClick="GoBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+    <TextView
+        android:id="@+id/InfoText1"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="28dp"
+        android:text="The purpose of this app is to be able to write down a simple note/reminder for yourself. The text is stored in this app, so you can open and close this app without losing your notes!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HelpTitle" />
+
+    <TextView
+        android:id="@+id/infoText2"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="4dp"
+        android:text="Preferences - Tap on the gear icon on the top right to access your preferences. There, you can change the app's background color, clear your notes, and restore default settings."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/InfoText1" />
+
+    <TextView
+        android:id="@+id/infoText3"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="4dp"
+        android:text="New/Modify Note - Tap on the + icon on the bottom right to create a new note. There, you can write whatever you want and add things to the text, such as italics, underline, and bold. If a note is already created, tap the button again to edit it"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infoText2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
